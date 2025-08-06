@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px var(--color-border);
+  width: 100%;
+  float: always;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  max-block-size: 80px;
+}
+
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  padding-right: 40px;
+  list-style: none;
+  font-size: 20px;
+  font-style: normal;
+}
