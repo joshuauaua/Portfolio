@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.DEV ? '/' : '/Portfolio/'}>
       <Navbar />
       <Routes>
       <Route path="/" element={<Home />}/>

@@ -1,4 +1,5 @@
 import "./navbar.css"
+import "./assets/logoblack.png"
 
 export default function Navbar() {
 
@@ -7,7 +8,7 @@ export default function Navbar() {
     <>
     <nav className="navbar">
 
-      <img src="/logoblack.png" alt="Joshua Ng" className="nav-logo" />
+      <img src="/assets/logoblack.png" alt="Joshua Ng" className="nav-logo" />
       
       <ul className="nav-links">
         <li><a href="/work">Work</a></li>
