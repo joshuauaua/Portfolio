@@ -1,12 +1,13 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
-  border: solid 1px var(--color-border);
+  align-items: center; 
   width: 100%;
   float: always;
   position: fixed;
   top: 0;
   background-color: white;
+  opacity: 0.9;
+  z-index: 1000;
 }
 
 .nav-logo {

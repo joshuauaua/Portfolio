@@ -4,7 +4,10 @@ export default function Footer() {
 
 return(
   <>
-    <h1>Footer</h1>
+    <p className="footer-links">LINKEDIN
+      INSTAGRAM
+      GITHUB
+       </p>
   </>
 )
 
