@@ -1,23 +1,34 @@
-import "./navbar.css"
-import logo from '../assets/logoblack.png'
+import { useState } from "react";
+import "./navbar.css";
+import logo from "../assets/logoblack.png";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-
-    <>
     <nav className="navbar">
+      <div className="nav-left">
+        <img src={logo} alt="Joshua Ng" className="nav-logo" />
 
-      <img src={logo} alt="Joshua Ng" className="nav-logo" />
-      <p className="nav-desc">Fullstack Developer & Creative Technologist </p>
-      
-      <ul className="nav-links">
-        <li><a href="/work">Work</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/about">Contact</a></li>
+       
+      </div>
+
+      <ul className={`nav-links nav-right-links ${menuOpen ? "open" : ""}`}>
+        <li><a href="/work">PROJECTS</a></li>
+          <li><a href="/about">ABOUT ME</a></li>
+          <li><a href="/contact">CONTACT</a></li>
+
       </ul>
 
+      {/* Hamburger Button */}
+      <div
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span />
+        <span />
+        <span />
+      </div>
     </nav>
-    </>
-  )
+  );
 }

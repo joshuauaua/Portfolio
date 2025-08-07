@@ -1,30 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
-  display: flex;
-  align-items: center; 
-  width: 100%;
-  float: always;
   position: fixed;
   top: 0;
-  background-color: white;
-  opacity: 0.9;
-  z-index: 1000;
-}
-
-.nav-logo {
+  width: 100%;
+  padding: 1.2rem 2rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  max-block-size: 80px;
+  background-color: white;
+  z-index: 100;
+  animation: fadeSlideDown 0.8s ease-out forwards;
+  opacity: 0;
 }
 
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-.nav-links{
+.nav-left {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem;
-  padding-right: 40px;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
   list-style: none;
-  font-size: 20px;
-  font-style: normal;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #555;
+}
+
+.nav-right-links {
+  margin-left: auto;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 0;
+    transform: translateY(-200%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-left,
+  .nav-right-links {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .nav-right-links {
+    margin-left: 0;
+  }
 }
