@@ -1,0 +1,21 @@
+
+.skillset-btn{
+  border: solid;
+  background-color: transparent;
+  font-size: 1rem;
+  color: black;
+  border: none;
+  border-bottom: solid;
+}
+
+.skillset-btn:hover{
+  cursor: pointer;
+}
+
+
+.skillset-tile{
+  position: relative;
+  color: white;
+  border-radius: 1.5rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  background-color: #ffffff;}

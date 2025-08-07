@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import SelectedProjects from '../components/selectedprojects';
-import Shortabout from '../components/shortAbout';
+import Skillset from '../components/skillset';
 import ContactForm from '../components/contactForm';
 
 export default function Home(){
@@ -8,7 +8,7 @@ export default function Home(){
   return(
     <>
     <Header />
-    <Shortabout />
+    <Skillset />
     <SelectedProjects />
     <ContactForm />
     </>

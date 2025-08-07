@@ -1,5 +1,6 @@
 import "../components/hero.css";
-import Silk from './Silk';
+import Silk from "./silk";
+
 
 <Silk
   speed={5}
@@ -12,17 +13,20 @@ import Silk from './Silk';
 export default function Hero() {
   return (
     <>
-    <div className="hero">
+      <div className="hero">
+        <div className="hero-background">
+         <Silk className="hero-background-image" alt="Silk background" />
+        </div>
 
-      <div className="hero-background">
-      <Silk className="hero-background"/>
-      </div>
+        <div className="hero-text">
+          <p className="hero-intro">Hello! My name is</p>
+          <h3 className="hero-description">
+            Joshua Ng. <br/>
+            I build thoughtful web experiences.
+          </h3>
 
-      <div className="hero-text">
-      <h3 className ="hero-intro">Hello, my name is Joshua Ng.</h3>
-      <h2 className = "hero-description">I build thoughtful web experiences.</h2>
-      <button className = "hero-btn">⇊</button>
-      </div>
+          <button className="hero-btn">⇊</button>
+        </div>
       </div>
     </>
   );
