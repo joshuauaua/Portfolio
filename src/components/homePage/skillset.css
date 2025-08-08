@@ -40,6 +40,20 @@
   background-color: #ffffff0a;
   padding: 1.5rem 2rem;
   font-size: 40px; /* Increased font size */
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .skillset-container {
+    padding: 0 1rem; /* Reduced padding for smaller screens */
+  }
+
+  .skillset-description {
+    font-size: 28px; /* Adjusted font size for smaller screens */
+  }
+
+  .skillset-btn {
+    font-size: 1rem; /* Adjusted button font size for smaller screens */
+  }
 }

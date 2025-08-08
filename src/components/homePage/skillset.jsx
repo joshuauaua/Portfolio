@@ -12,7 +12,7 @@ export default function Skillset(){
     <div className="skillset-container">
 
     <p className="skillset-description">
-    I’m a full-stack .NET developer and creative technologist based in Stockholm, Sweden, with a background in project management. I thrive on solving complex challenges and enjoy crafting web applications as immersive, user-driven digital experiences.  </p>
+    I’m a full-stack .NET developer and creative technologist based in Stockholm, Sweden, with a background in project management. <br /> I thrive on solving complex challenges and enjoy crafting web applications as immersive, user-driven digital experiences.  </p>
     <button className="skillset-btn">Find Out More ↗</button>
     </div>
     </div>

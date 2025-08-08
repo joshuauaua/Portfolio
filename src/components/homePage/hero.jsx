@@ -1,4 +1,4 @@
-import "../components/hero.css";
+import "./hero.css";
 import Silk from "./silk";
 
 

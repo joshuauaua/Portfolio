@@ -1,16 +1,26 @@
-import Header from '../components/Header';
-import SelectedProjects from '../components/selectedprojects';
-import Skillset from '../components/skillset';
-import ContactForm from '../components/contactForm';
+import Hero from "../components/homePage/hero";
+import SelectedProjects from "../components/homePage/selectedProjects";
+import Skillset from "../components/homePage/skillset";
+import ContactForm from "../components/homePage/contactForm";
+import CircularText from "../components/homePage/circularText";
+import Toggle from "../components/toggle";
 
-export default function Home(){
 
-  return(
+export default function Home() {
+  return (
     <>
-    <Header />
-    <Skillset />
-    <SelectedProjects />
-    <ContactForm />
+
+      <Hero />
+      <CircularText
+        text="CREATIVE TECHNOLOGIST * FULLSTACK DEVELOPER * "
+        onHover="speedUp"
+        spinDuration={20}
+        className="custom-class"
+      />
+      <Toggle />
+      <Skillset />
+      <SelectedProjects />
+      <ContactForm />
     </>
-  )
+  );
 }
