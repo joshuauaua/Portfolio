@@ -3,10 +3,10 @@ import './toggle.css'
 
 export default function Toggle() {
 
-  return(<div class="container">
-    <label for="switch" class="toggle">
-      <input type="checkbox" class="input" id="switch" />
-      <div class="icon icon--moon">
+  return(<div className="container">
+    <label for="switch" className="toggle">
+      <input type="checkbox" className="input" id="switch" />
+      <div className="icon icon--moon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -22,7 +22,7 @@ export default function Toggle() {
         </svg>
       </div>
   
-      <div class="icon icon--sun">
+      <div className="icon icon--sun">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

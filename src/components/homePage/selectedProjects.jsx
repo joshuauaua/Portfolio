@@ -1,6 +1,6 @@
 import "./selectedProjects.css";
 import LightRays from "./lightRays";
-import Card from "./card";
+import ProjectCard from "./projectCard";
 
 export default function SelectedProjects() {
   return (
@@ -25,12 +25,18 @@ export default function SelectedProjects() {
           <h1 className="selected-projects-title">SELECTED PROJECTS</h1>
           <button className="selected-projects-btn">All Projects ↗</button>
 
-          <div className="selected-projects-cards">
-          <Card />
-          <Card />
-          <Card />
-          </div>
-
+          <ProjectCard
+            project={{
+              title: "Portfolio Website",
+              tags: ["React", "CSS", "Framer Motion"],
+              description: "A responsive portfolio site built with React.",
+              image: "./src/assets/overlayimg.png",
+              button: {
+                link: "https://github.com/joshuang/portfolio",
+                text: "View Code",
+              },
+            }}
+          />
         </div>
       </div>
     </>
