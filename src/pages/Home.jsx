@@ -1,7 +1,7 @@
 import Hero from "../components/homePage/hero";
 import SelectedProjects from "../components/homePage/selectedProjects";
 import Skillset from "../components/homePage/skillset";
-import ContactForm from "../components/homePage/contactForm";
+import LetsChat from "../components/homePage/letsChat";
 import CircularText from "../components/homePage/circularText";
 import Toggle from "../components/toggle";
 
@@ -20,7 +20,9 @@ export default function Home() {
       <Toggle />
       <Skillset />
       <SelectedProjects />
-      <ContactForm />
+      <LetsChat />
+
+      
     </>
   );
 }

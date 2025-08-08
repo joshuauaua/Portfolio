@@ -1,12 +1,12 @@
 import "./selectedProjects.css";
 import LightRays from "./lightRays";
+import Card from "./card";
 
 export default function SelectedProjects() {
   return (
     <>
       <div className="selected-projects-container">
-      
-        <div className= "selected-projects-background">
+        <div className="selected-projects-background">
           <LightRays
             raysOrigin="top-center"
             raysColor="#00ffff"
@@ -22,8 +22,14 @@ export default function SelectedProjects() {
         </div>
 
         <div className="selected-projects-content">
-        <h1 className="selected-projects-title">SELECTED PROJECTS</h1>
-        <button className="selected-projects-btn">All Projects ↗</button>
+          <h1 className="selected-projects-title">SELECTED PROJECTS</h1>
+          <button className="selected-projects-btn">All Projects ↗</button>
+
+          <div className="selected-projects-cards">
+          <Card />
+          <Card />
+          <Card />
+          </div>
 
         </div>
       </div>
