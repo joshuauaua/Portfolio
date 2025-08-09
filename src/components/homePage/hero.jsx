@@ -27,6 +27,8 @@ export default function Hero() {
 
           <button className="hero-btn">⇊</button>
         </div>
+
+        
       </div>
     </>
   );

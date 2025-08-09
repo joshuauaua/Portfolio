@@ -1,4 +1,5 @@
 import './letsChat.css';
+import LightRays from './lightRays';
 
 export default function LetsChat(){
 
@@ -6,6 +7,6 @@ export default function LetsChat(){
 
     <>
     <h1 className="lets-chat">LET'S CHAT!</h1>
-    </>
+     </>
   )
 }

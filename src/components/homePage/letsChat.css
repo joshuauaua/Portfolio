@@ -2,5 +2,6 @@
 .lets-chat{
   font-size: 12rem;
   padding: 3rem;
-
+  background-color: black;
+  color: white;
 }

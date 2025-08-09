@@ -5,6 +5,7 @@
   padding: 2rem; /* Same as .hero */
   min-height: 100vh;
   box-sizing: border-box;
+  background-color: black;   /*adjust for light mode*/
 }
 
 .skillset-container {
@@ -19,9 +20,9 @@
 .skillset-btn {
   background-color: transparent;
   font-size: 1.2rem; /* Increased font size */
-  color: black;
+  color: rgb(255, 255, 255);  /*adjust for light mode*/
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(255, 255, 255);  /*adjust for light mode*/
   text-align: center;
   width: fit-content;
   align-self: center;
@@ -34,10 +35,9 @@
 }
 
 .skillset-description {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);  /*adjust for light mode*/
   border-radius: 1.5rem;
-  border: 1px solid white;
-  background-color: #ffffff0a;
+  border: none;
   padding: 1.5rem 2rem;
   font-size: 40px; /* Increased font size */
   text-align: center;
