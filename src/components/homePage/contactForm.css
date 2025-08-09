@@ -1,0 +1,83 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #000000;
+  border-radius: 0;
+  z-index: -1;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+  color: #ffffff;  /* Adjust for light mode */
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: none;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #c5c5c5; /* form field background color */
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ffffff;
+  padding-inline: 1em;
+}
+
+
+
+
+.sendMessage-btn {
+  background-color: transparent;
+  font-size: 1.2rem; /* Increased font size */
+  color: rgb(255, 255, 255);  /*adjust for light mode*/
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);  /*adjust for light mode*/
+  text-align: center;
+  width: fit-content;
+  align-self: center;
+  padding: 20px;
+  padding-top: 40px;
+  margin-bottom: 60px;
+
+}
+
+.sendMessage-btn:hover {
+  cursor: pointer;
+  color: #cfcfcf;
+}
+
+.form-card1 {
+  background-image: linear-gradient(163deg, #000000 0%, #999999 100%);
+  border-radius: none;
+  transition: all 0.3s;
+}
+
+
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+

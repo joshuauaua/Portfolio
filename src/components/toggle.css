@@ -1,6 +1,7 @@
 /* From Uiverse.io by Creatlydev */ 
 .toggle {
   background-color: #ffffff;
+  opacity: 0.7;
   width: 46px;
   height: 46px;
   border-radius: 50%;

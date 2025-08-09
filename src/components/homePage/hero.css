@@ -64,6 +64,25 @@
 }
 
 @media (max-width: 768px) {
+  
+
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    padding-top: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    font-size: 40px;
+    max-width: 800px;
+    margin: 0 auto; 
+    padding-left: 90px;
+  }
+  
   .hero-description {
     font-size: 2rem;
   }
@@ -71,4 +90,6 @@
   .hero-btn {
     font-size: 3rem;
   }
+  
+
 }

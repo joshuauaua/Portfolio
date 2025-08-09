@@ -30,6 +30,7 @@
   .circular-text {
     width: 70px;
     height: 70px;
+    color: transparent;
   }
 
   .circular-text span {

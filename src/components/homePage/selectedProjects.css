@@ -152,4 +152,13 @@
   .project-description {
     font-size: 0.95rem;
   }
+
+  .selected-projects-title {
+    font-size: 4rem;
+    padding: 2rem;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  
 }
